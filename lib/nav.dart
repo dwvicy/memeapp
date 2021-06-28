@@ -3,15 +3,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:memeapp/constants/AppTheme.dart';
 import 'package:memeapp/screens/addMemes.dart';
+import 'package:memeapp/screens/anotherPage.dart';
 import 'package:memeapp/screens/feature.dart';
+import 'package:memeapp/screens/home.dart';
 
 
-class HomePage extends StatefulWidget {
+class NavPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _NavPageState createState() => _NavPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _NavPageState extends State<NavPage> {
   int bottomSelectedIndex = 0;
 
   List<BottomNavigationBarItem> buildBottomNavBarItems() {
@@ -27,13 +29,13 @@ class _HomePageState extends State<HomePage> {
             LineIcons.hourglassEnd,
             color: Colors.black54,
           ),
-          label: 'rant'),
+          label: 'categories'),
       BottomNavigationBarItem(
         icon: Icon(
-          LineIcons.undo,
+          LineIcons.drawPolygon,
           color: Colors.black54,
         ),
-        label: 'routine',
+        label: 'memes',
       ),
     ];
   }
@@ -53,7 +55,7 @@ class _HomePageState extends State<HomePage> {
       children: <Widget>[
         HomePage(),
         AddMeme(),
-        FeaturePage(),
+        FeatureAnother(),
       ],
     );
   }
@@ -86,10 +88,10 @@ class _HomePageState extends State<HomePage> {
         title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'niyamo',
+              'MayMay',
               style: TextStyle(
-                  color: AppTheme.pinky,
-                  fontWeight: FontWeight.w900,
+                  color: Colors.black54,
+                  fontWeight: FontWeight.w300,
                   fontSize: 30),
             )),
         backgroundColor: AppTheme.offWhite,

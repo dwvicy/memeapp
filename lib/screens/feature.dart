@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FeaturePage extends StatefulWidget {
-  const FeaturePage({ Key? key }) : super(key: key);
+  const FeaturePage({Key? key}) : super(key: key);
 
   @override
   _FeaturePageState createState() => _FeaturePageState();
@@ -12,6 +12,13 @@ class _FeaturePageState extends State<FeaturePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
+      body: Center(
+        child: MaterialButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/home');
+          },
+        ),
+      ),
     );
   }
 }
