@@ -1,13 +1,12 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:memeapp/constants/AppTheme.dart';
 import 'package:memeapp/constants/drawer.dart';
-import 'package:memeapp/screens/addMemes.dart';
+
 import 'package:memeapp/screens/anotherPage.dart';
 import 'package:memeapp/screens/categories.dart';
-import 'package:memeapp/screens/feature.dart';
+
 import 'package:memeapp/screens/home.dart';
 
 
