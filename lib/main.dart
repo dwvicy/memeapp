@@ -14,12 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      routes: {
+      routes: { //Adding the routes to different pages
         '/': (context) => NavPage(),
         '/addMeme': (context) => AddMeme(),
         '/home': (context) => HomePage(),
         '/feature':(context) => FeaturePage()
       },
-    );
+      theme: ThemeData(fontFamily: 'Poppins',
+      appBarTheme: 
+      AppBarTheme(iconTheme: 
+          IconThemeData(color: Colors.black54, size: 30))
+    ));
   }
 }

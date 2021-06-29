@@ -1,9 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:memeapp/constants/AppTheme.dart';
 import 'package:memeapp/screens/addMemes.dart';
 import 'package:memeapp/screens/anotherPage.dart';
+import 'package:memeapp/screens/categories.dart';
 import 'package:memeapp/screens/feature.dart';
 import 'package:memeapp/screens/home.dart';
 
@@ -54,7 +56,7 @@ class _NavPageState extends State<NavPage> {
       },
       children: <Widget>[
         HomePage(),
-        AddMeme(),
+        CategoryList(),
         FeatureAnother(),
       ],
     );
@@ -82,9 +84,10 @@ class _NavPageState extends State<NavPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.offWhite,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        leading: Container(),
+        // leading: Container(),
+        leading: Icon(LineIcons.hamburger),
         title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
@@ -94,7 +97,7 @@ class _NavPageState extends State<NavPage> {
                   fontWeight: FontWeight.w300,
                   fontSize: 30),
             )),
-        backgroundColor: AppTheme.offWhite,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: buildPageView(),
