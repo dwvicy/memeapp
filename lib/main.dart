@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:memeapp/nav.dart';
-import 'package:memeapp/screens/addMemes.dart';
+import 'package:memeapp/screens/someOtherFeature.dart';
 import 'package:memeapp/screens/feature.dart';
 import 'package:memeapp/screens/home.dart';
 
