@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:memeapp/constants/AppTheme.dart';
+import 'package:memeapp/constants/drawer.dart';
 import 'package:memeapp/screens/addMemes.dart';
 import 'package:memeapp/screens/anotherPage.dart';
 import 'package:memeapp/screens/categories.dart';
@@ -84,10 +85,11 @@ class _NavPageState extends State<NavPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       backgroundColor: Colors.white,
       appBar: AppBar(
         // leading: Container(),
-        leading: Icon(LineIcons.hamburger),
+        // leading: Icon(LineIcons.hamburger),
         title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
