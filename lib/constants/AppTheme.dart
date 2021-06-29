@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color lightYellow = Color(0xFFFFE18E);
+  static const Color lightYellow = Color(0xFFFFEA80);
   static const Color ellowPinky = Color(0xFFFC5866);
   static const Color pinky = Color(0xFFFC588A);
   static const Color offWhite = Color(0xFFE4E2DD);
@@ -11,17 +11,14 @@ class AppTheme {
 
 class Style {
   static const TextStyle bigHead = TextStyle(
-      fontFamily: 'Poppins',
       fontWeight: FontWeight.bold,
       fontSize: 30,
       color: Colors.black54);
   static const TextStyle productName = TextStyle(
-      fontFamily: 'Poppins',
-      fontWeight: FontWeight.normal,
+      fontWeight: FontWeight.w700,
       fontSize: 20,
       color: Colors.black54);
   static const TextStyle productDesc = TextStyle(
-    fontFamily: 'Poppins',
     fontWeight: FontWeight.w300,
     fontSize: 15,
     color: Colors.black54,
